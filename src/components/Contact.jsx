@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Label } from "./aceternity/label";
-import { Input } from "./aceternity/input";
+import { Label } from "./aceternity/Label";
+import { Input } from "./aceternity/Input";
 import { cn } from "../lib/utils";
 import { Cover } from "./aceternity/Cover";
 import useEmailJS from "../lib/useEmailJs";
