@@ -44,6 +44,33 @@ const people = [
   },
 ];
 
+const projectData = [
+  {
+    src: "/projects/grocerystorebanner.jpg",
+    alt: "grocerystorebanner",
+    top: "0%",
+    zIndex: 1,
+  },
+  {
+    src: "/projects/musicacademybanner.jpg",
+    alt: "musicacademybanner",
+    top: "25%",
+    zIndex: 2,
+  },
+  {
+    src: "/projects/gymsymbanner.png",
+    alt: "gymsymbanner",
+    top: "50%",
+    zIndex: 3,
+  },
+  {
+    src: "/projects/logikartbanner.jpg",
+    alt: "logikartbanner",
+    top: "75%",
+    zIndex: 4,
+  },
+];
+
 function HeroSection() {
   return (
     <div className="w-full overflow-x-hidden min-h-screen grid lg:grid-cols-[1fr_0.6fr_0.4fr] gap-[20px]">
@@ -76,14 +103,16 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full h-full flex items-end bg-[#0d0d0e]">
-        <img
-          src="/bannerimage.jpg"
-          width={800}
-          height={1200}
-          alt="model"
-          className="w-full max-h-[90vh] object-contain object-bottom"
-        />
+      <div className="relative w-full h-full flex bg-[#0d0d0e] overflow-hidden">
+        {projectData.map((image, index) => (
+          <BannerImage
+            key={index} // Use a unique key for each item
+            src={image.src}
+            alt={image.alt}
+            top={image.top}
+            zIndex={image.zIndex}
+          />
+        ))}
       </div>
 
       <div className="w-[90%] mx-auto py-[30px] flex flex-col items-center z-2">
@@ -115,5 +144,14 @@ function HeroSection() {
     </div>
   );
 }
+
+const BannerImage = ({ src, alt, top, zIndex }) => (
+  <img
+    src={src}
+    alt={alt}
+    width={800}
+    className={`absolute z-${zIndex} hover:z-5 top-[${top}] hover:top-0 w-full object-cover object-top transition-all transform-fill`}
+  />
+);
 
 export default HeroSection;
