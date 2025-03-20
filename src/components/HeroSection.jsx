@@ -150,7 +150,7 @@ const BannerImage = ({ src, alt, top, zIndex }) => (
     src={src}
     alt={alt}
     width={800}
-    className={`border-2 border-white absolute z-${zIndex} hover:z-5 top-[${top}] hover:top-0 w-full object-cover object-top transition-all transform-fill`}
+    className={`border-2 border-white absolute z-${zIndex} hover:z-5 top-[${top}] hover:top-0 w-full object-cover object-top transition-all transform-fill delay-200`}
   />
 );
 
