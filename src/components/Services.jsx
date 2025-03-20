@@ -65,7 +65,7 @@ function Services() {
     <div className="mt-[150px] flex flex-col" id="services">
       <div className="px-8 flex flex-col justify-center items-center ">
         <h2 className="mx-auto text-neutral-800 text-xl md:text-3xl lg:text-5xl font-sans relative z-20 font-bold tracking-tight">
-          <Cover>Our Services</Cover>.
+          <Cover>Our Services</Cover>
         </h2>
         <p className="max-w-xl text-[1rem] text-center mt-[10px] md:text-lg text-neutral-700 dark:text-neutral-400">
           We Provide High-Quality Services
