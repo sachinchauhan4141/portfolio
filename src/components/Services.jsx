@@ -2,7 +2,7 @@ import { cn } from "../lib/utils";
 import {
   IconAdjustmentsBolt,
   IconCloud,
-  IconCurrencyDollar,
+  IconCurrencyRupee,
   IconEaseInOut,
   IconHeart,
   IconHelp,
@@ -14,51 +14,53 @@ import { Cover } from "./aceternity/Cover";
 function Services() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Tailored for Businesses",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Custom web & app solutions designed to help businesses grow.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "User-Friendly Designs",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Seamless, intuitive, and engaging experiences for your users.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+      title: "Affordable Pricing",
+      description: "High-quality work at competitive rates—no hidden costs.",
+      icon: <IconCurrencyRupee />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Reliable & Scalable",
+      description: "Future-proof solutions built for performance and growth.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Secure & Optimized",
+      description:
+        "Speed, security, and efficiency—because every detail matters.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "24/7 Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Prompt responses and continuous support for all your needs.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "Satisfaction Guaranteed",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Your vision, perfectly executed—or we’ll refine until it is.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "And Much More",
+      description:
+        "Every project is unique—let’s build something great together!",
       icon: <IconHeart />,
     },
   ];
+
   return (
     <div className="mt-[150px] flex flex-col" id="services">
       <div className="px-8 flex flex-col justify-center items-center ">
@@ -66,7 +68,7 @@ function Services() {
           <Cover>Our Services</Cover>.
         </h2>
         <p className="max-w-xl text-[1rem] text-center mt-[10px] md:text-lg text-neutral-700 dark:text-neutral-400">
-          We Provide You Quality Of Services
+          We Provide High-Quality Services
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
