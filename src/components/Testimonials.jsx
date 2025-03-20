@@ -3,7 +3,10 @@ import { InfiniteMovingCards } from "./aceternity/InfiniteMovingCards";
 
 function Testimonials() {
   return (
-    <div id="testimonials" className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div
+      id="testimonials"
+      className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"
+    >
       <h4 className="text-3xl lg:text-5xl lg:leading-tight ma-w-5xl mx-auto text-center text-white font-medium">
         What Our Clients Says
       </h4>
@@ -19,32 +22,63 @@ function Testimonials() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "The team built a fast and modern website for our company. The UI/UX was outstanding, and we saw a significant increase in online inquiries after the launch!",
+    name: "Rajesh Kumar",
+    title: "Founder, CloudSparrow Technology",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "We needed a feature-rich chat application, and they delivered beyond expectations. Real-time messaging and smooth performance made our platform a hit among users.",
+    name: "Ankita Sharma",
+    title: "Product Manager, ChatSphere",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Our e-commerce store needed a revamp, and the team executed it perfectly. The new site is highly responsive, visually appealing, and optimized for SEO.",
+    name: "Vikram Patel",
+    title: "Owner, TrendyCart",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "They developed a custom dashboard for our music academy, making student management seamless. The UI is intuitive, and it has saved us countless hours of admin work.",
+    name: "Priya Mehta",
+    title: "Director, Harmony Music Academy",
+  },
+  {
+    quote:
+      "From website design to deployment, their process was smooth and efficient. They handled everything professionally and delivered on time!",
+    name: "Sandeep Verma",
+    title: "CEO, WebNexa Solutions",
+  },
+  {
+    quote:
+      "Their expertise in React and backend technologies was evident in the web app they built for us. The performance and security features were top-notch!",
+    name: "Neha Agarwal",
+    title: "Co-Founder, EduTech Innovators",
+  },
+  {
+    quote:
+      "The mobile app they developed for our delivery service was a game-changer. It’s fast, user-friendly, and has significantly improved customer satisfaction.",
+    name: "Rohit Malhotra",
+    title: "CTO, QuickDeliver",
+  },
+  {
+    quote:
+      "I highly recommend them for any web and app development needs. They truly understand modern web technologies and build solutions that are both functional and beautiful.",
+    name: "Kunal Desai",
+    title: "Head of IT, NextGen Enterprises",
+  },
+  {
+    quote:
+      "We wanted a strong online presence for our local business, and they delivered a stunning website that helped us attract more customers.",
+    name: "Ananya Roy",
+    title: "Owner, The Craft Store",
+  },
+  {
+    quote:
+      "The best team we’ve worked with for web development! They not only built a great platform but also provided valuable insights on improving user engagement.",
+    name: "Rishi Patel",
+    title: "Marketing Lead, Startup Boost",
   },
 ];
 
