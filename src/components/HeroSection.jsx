@@ -66,13 +66,13 @@ function HeroSection() {
         <div className="flex flex-col justify-center h-[80%]">
           <span className="text-[#4e69e0] font-medium">Its me</span>
           <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
-            Sachin Chauhan, <br /> <Cover>Web Developer</Cover>.
+            Empowering Businesses, <br /> <Cover>Building Futures.</Cover>.
           </h2>
           <a
             href="#contact"
             className="text-white border-b border-l border-[#525252] hover:p-[10px] hover:bg-[#5070ff2f] transition-all ease-in-out mr-auto py-[10px] font-[600]"
           >
-            Hire me &rarr;
+            Hire Us &rarr;
           </a>
           <div className="flex flex-row mt-[60px]">
             <AnimatedTooltip items={people} />
@@ -98,18 +98,22 @@ function HeroSection() {
           href="#contact"
           className="max-w-[130px] w-full h-[40px] flex justify-center items-center border border-l border-[#333333] text-white font-[600] rounded-[30px] mx-auto pb-[2px] "
         >
-          Hire me
+          Hire Us
         </a>
         <h2 className="bg-clip-text mt-[100px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-2xl lg:text-3xl font-sans relative z-20 font-bold tracking-tight">
-          About Me
+          About Us
         </h2>
-        <p className="max-w-xl mx-auto text-sm text-neutral-700 dark:text-neutral-400 text-start mt-[20px]">
-          Get the best advices from our experts, including expert artists,
-          painters, marathon enthusiasts and RDX, totally free.
+        <p className="max-w-xl mx-auto text-xs text-neutral-700 dark:text-neutral-400 text-start mt-[20px]">
+          We are a team of passionate developers, designers, and strategists
+          committed to building modern digital solutions that help businesses
+          grow and succeed online. Whether it’s a website, mobile app, or a
+          complete digital transformation, we create solutions that are
+          scalable, user-friendly, and impactful.
         </p>
-        <p className="max-w-xl mx-auto text-sm text-neutral-700 dark:text-neutral-400 text-start mt-[20px]">
-          Get the best advices from our experts, including expert artists,
-          painters, marathon enthusiasts and RDX, totally free.
+        <p className="max-w-xl mx-auto text-xs text-neutral-700 dark:text-neutral-400 text-start mt-[20px]">
+          With a focus on innovation, performance, and user experience, we work
+          closely with clients to bring their ideas to life. Let’s build
+          something amazing together!
         </p>
         <Skills />
       </div>
