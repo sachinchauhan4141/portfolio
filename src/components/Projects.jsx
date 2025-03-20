@@ -50,12 +50,6 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Team Portfolio",
-    title: "Showcasing our team's skills & expertise.",
-    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1080&h=1920&auto=format&fit=crop",
-    content: <DummyContent />,
-  },
-  {
     category: "E-commerce Platform",
     title: "A feature-rich online store with seamless user experience.",
     src: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1080&h=1920&auto=format&fit=crop",

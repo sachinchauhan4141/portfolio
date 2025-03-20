@@ -4,6 +4,47 @@ import { CardSpotlight } from "./aceternity/CardSpotlight";
 import { BiCheck } from "react-icons/bi";
 
 const Pricing = () => {
+  const data = [
+    {
+      title: "Static Website Development",
+      price: "Starting at ₹5,999",
+      description:
+        "Fast and secure static websites with optimized performance and SEO.",
+      steps: [
+        "Responsive design for all devices",
+        "Optimized for fast loading speed",
+        "SEO-friendly structure",
+        "Basic contact form integration",
+        "Hosting & domain setup assistance",
+      ],
+    },
+    {
+      title: "Dynamic Website Development",
+      price: "Starting at ₹11,999",
+      description:
+        "Feature-rich, database-driven websites tailored to your business needs.",
+      steps: [
+        "Admin panel for content management",
+        "User authentication & roles",
+        "Interactive UI with animations",
+        "Database integration (MongoDB, MySQL, etc.)",
+        "Third-party API integration",
+      ],
+    },
+    {
+      title: "Mobile Application Development",
+      price: "Starting at ₹19,999",
+      description: "Custom mobile apps for iOS and Android with modern UI/UX.",
+      steps: [
+        "Cross-platform development",
+        "Push notifications & real-time updates",
+        "Secure authentication system",
+        "Offline functionality support",
+        "Deployment (Google Play & App Store)",
+      ],
+    },
+  ];
+
   return (
     <div id="pricing">
       <div className="px-8 py-8 flex flex-col justify-center items-center ">
@@ -11,34 +52,32 @@ const Pricing = () => {
           <Cover>Our Pricing</Cover>.
         </h2>
         <p className="max-w-xl text-[1rem] text-center mt-[10px] md:text-lg text-neutral-700 dark:text-neutral-400">
-          We Provide You Quality Of Services
+          Top-Quality Services at the Best Value
         </p>
       </div>
       <div className="max-w-[1000px] w-[90%] m-[90px_auto] grid md:grid-cols-3 gap-[25px]">
-        {[1, 2, 3].map((card) => {
+        {data.map((card) => {
           return (
             <CardSpotlight
               key={"card" + card}
               className="w-full p-[30px] flex flex-col"
             >
               <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                Authentication steps
+                {card.title}
               </p>
               <span className="text-white text-2xl flex mt-2 font-medium relative z-20">
-                800$
+                {card.price}
               </span>
               <div className="text-neutral-200 mt-4 relative z-20">
-                Follow these steps to secure your account:
+                Features:
                 <ul className="list-none  mt-2">
-                  <Step title="Enter your email address" />
-                  <Step title="Create a strong password" />
-                  <Step title="Set up two-factor authentication" />
-                  <Step title="Verify your identity" />
+                  {card.steps.map((step, index) => {
+                    return <Step key={index} title={step} />;
+                  })}
                 </ul>
               </div>
               <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-                Ensuring your account is properly secured helps protect your
-                personal information and data.
+                {card.description}
               </p>
               <a
                 href="#contact"
