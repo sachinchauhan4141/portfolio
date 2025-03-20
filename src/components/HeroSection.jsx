@@ -56,9 +56,8 @@ function HeroSection() {
       <div className="max-w-[600px] w-[90%] mx-auto py-[30px] ">
         <a href="#">
           <img
-            src="/vite.svg"
-            width={40}
-            height={40}
+            src="/logo.svg"
+            width={120}
             alt="logo"
             className="max-h-[80px] h-full object-contain object-center "
           />
