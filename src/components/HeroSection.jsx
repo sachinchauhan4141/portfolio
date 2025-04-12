@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import { Cover } from "./aceternity/Cover";
 import { AnimatedTooltip } from "./aceternity/AnimatedTootip";
 import { Skills } from "./Skills";
@@ -145,13 +146,30 @@ function HeroSection() {
   );
 }
 
-const BannerImage = ({ src, alt, top, zIndex }) => (
-  <img
-    src={src}
-    alt={alt}
-    width={800}
-    className={`border-2 border-white absolute z-${zIndex} hover:z-5 top-[${top}] hover:top-0 w-full object-cover object-top transition-all transform-fill delay-200`}
-  />
-);
+const BannerImage = ({ src, alt, top, zIndex }) => {
+  const topClass =
+    {
+      "0%": "top-[0%]",
+      "25%": "top-[25%]",
+      "50%": "top-[50%]",
+      "75%": "top-[75%]",
+    }[top] || "top-0";
+
+  const zClass = `z-[${zIndex}]`;
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={800}
+      className={clsx(
+        "absolute w-full object-cover object-top border-2 border-white transition-all duration-500 ease-in-out",
+        topClass,
+        zClass,
+        "hover:top-0 hover:z-[999]"
+      )}
+    />
+  );
+};
 
 export default HeroSection;
