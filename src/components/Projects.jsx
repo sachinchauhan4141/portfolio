@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Card } from "./aceternity/AppleCardsCarousel";
+import { link } from "motion/react-client";
 
 function Projects() {
   const cards = data.map((card, index) => (
@@ -40,46 +41,54 @@ const DummyContent = () => {
 
 const data = [
   {
+    category: "Travel Agency",
+    title:
+      "Explore destinations, book flights, and get visa assistance – all in one place.",
+    src: "https://images.unsplash.com/photo-1616394585067-d3e824140aa1?q=80&w=1080&h=1920&auto=format&fit=crop",
+    content: <DummyContent />,
+    link: "https://easetravelsindia.onrender.com",
+  },
+  {
+    category: "QR Ordering",
+    title: "Scan, select, and order easily.",
+    src: "https://images.unsplash.com/photo-1588675646184-f5b0b0b0b2de?q=80&w=1080&h=1920&auto=format&fit=crop",
+    content: <DummyContent />,
+    link: "https://qrordering.onrender.com",
+  },
+  {
     category: "E-commerce Platform",
     title: "A feature-rich online store with seamless user experience.",
     src: "https://plus.unsplash.com/premium_photo-1664201890484-a5f7109c8e56?q=80&w=1080&h=1920&auto=format&fit=crop",
     content: <DummyContent />,
-  },
-  {
-    category: "Video Streaming App",
-    title: "A high-performance platform for video content.",
-    src: "https://images.unsplash.com/photo-1673196649654-d3ed2f58483c?q=80&w=1080&h=1920&auto=format&fit=crop",
-    content: <DummyContent />,
-  },
-  {
-    category: "Admin Dashboard",
-    title: "A role-based dashboard for business management.",
-    src: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1080&h=1920&auto=format&fit=crop",
-    content: <DummyContent />,
+    link: "https://logikart.onrender.com",
   },
   {
     category: "Music Academy Website",
     title: "A platform for online music learning & booking lessons.",
     src: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1080&h=1920&auto=format&fit=crop",
     content: <DummyContent />,
+    link: "https://music-acad.onrender.com",
   },
   {
-    category: "PDF Editor",
-    title: "Convert, edit, and save PDFs easily.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1080&h=1920&auto=format&fit=crop",
+    category: "Video Streaming App",
+    title: "A high-performance platform for video content.",
+    src: "https://images.unsplash.com/photo-1673196649654-d3ed2f58483c?q=80&w=1080&h=1920&auto=format&fit=crop",
     content: <DummyContent />,
-  },
-  {
-    category: "IT Services Website",
-    title: "Website for a digital marketing & development agency.",
-    src: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1080&h=1920&auto=format&fit=crop",
-    content: <DummyContent />,
+    link: "https://watchnowtv.onrender.com",
   },
   {
     category: "Job Portal",
     title: "A fully functional job posting & application system.",
     src: "https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?q=80&w=1080&h=1920&auto=format&fit=crop",
     content: <DummyContent />,
+    link: "https://jobpostingboard-rgjx.onrender.com",
+  },
+  {
+    category: "IT Services Website",
+    title: "Website for a digital marketing & development agency.",
+    src: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1080&h=1920&auto=format&fit=crop",
+    content: <DummyContent />,
+    link: "https://cloudsparrowtechnology.com/",
   },
 ];
 
