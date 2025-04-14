@@ -11,6 +11,8 @@ body {
   background-color: #000000;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s)
     var(--animation-direction, forwards) linear infinite;
